@@ -9,7 +9,7 @@ const AdminHome = () => {
     const userInfo = user;
 
     return (
-        <div className="min-h-screen bg-gray-100 flex items-center justify-center p-6">
+        <div className=" bg-gray-100 flex p-6">
             <div className="bg-white rounded-2xl shadow-lg p-8 w-full max-w-2xl">
                 <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">Admin Dashboard</h1>
                 <div className="border rounded-xl p-6 bg-gradient-to-r from-orange-100 to-orange-50">

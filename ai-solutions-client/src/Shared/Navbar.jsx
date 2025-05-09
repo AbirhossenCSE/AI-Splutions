@@ -79,7 +79,7 @@ const Navbar = () => {
 
                 <div className="navbar-end">
                     {user && (
-                        <Link className="py-2 px-4 bg-base-300 rounded-3xl mr-4" to="/dashboard">
+                        <Link className="py-2 px-4 bg-base-300 rounded-3xl mr-4" to="/dashboard/adminHome">
                             Dashboard
                         </Link>
                     )}
@@ -96,10 +96,17 @@ const Navbar = () => {
                             Sign-In
                         </Link>
                     )}
-
-                    <button className="bg-gradient-to-r from-[rgba(241,165,145,1)] to-[rgba(233,119,217,1)] text-white md:px-8 md:py-3 px-2 py-1 flex items-center gap-2 rounded-3xl shadow-md hover:shadow-lg transition-shadow duration-200">
+                    <Link
+                        to="/"
+                        onClick={(e) => {
+                            e.preventDefault();
+                            window.location.href = "/#product";
+                        }}
+                        className="bg-gradient-to-r from-[rgba(241,165,145,1)] to-[rgba(233,119,217,1)] text-white md:px-8 md:py-3 px-2 py-1 flex items-center gap-2 rounded-3xl shadow-md hover:shadow-lg transition-shadow duration-200"
+                    >
                         Request for demo <ArrowRight className="h-4 w-4" />
-                    </button>
+                    </Link>
+
                 </div>
             </div>
         </div>
