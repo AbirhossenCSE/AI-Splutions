@@ -11,6 +11,7 @@ import ManageProduct from "../components/DashboardContent/ManageProduct";
 import DemoRequest from "../components/DashboardContent/DemoRequest";
 import ManageServices from "../components/DashboardContent/ManageServices";
 import ContactUsMessage from "../components/DashboardContent/ContactUsMessage";
+import AboutPage from "../pages/About/AboutPage";
 
 
 
@@ -19,6 +20,10 @@ export const router = createBrowserRouter([
   {
     path: '/',
     element: <Main></Main>
+  },
+  {
+    path: '/about',
+    element: <AboutPage></AboutPage>
   },
   {
     path: '/dashboard',

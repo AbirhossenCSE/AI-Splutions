@@ -5,7 +5,7 @@ import { ArrowRight } from 'lucide-react';
 
 const Home = () => {
     return (
-        <div id="home" className="bg-[#f9f9f9] pt-24 pb-12">
+        <div id="home" className="bg-[#f9f9f9] max-w-7xl mx-auto pt-24 pb-12">
             <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 bg-white p-8 rounded-xl shadow-lg">
 
                 {/* Left Content */}

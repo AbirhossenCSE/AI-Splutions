@@ -1,11 +1,12 @@
 import { ArrowRight } from 'lucide-react';
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import useAuth from '../hooks/useAuth';
 
 const Navbar = () => {
     const [activeId, setActiveId] = useState('home');
     const { user, signOutUser } = useAuth();
+    const location = useLocation();
 
     const handleSignOut = () => {
         signOutUser()
@@ -21,40 +22,54 @@ const Navbar = () => {
         }
     };
 
-    const sectionIds = ['home', 'about', 'services', 'product', 'contact'];
+    const getLinkClass = (id) => {
+        if (["home", "services", "product", "contact"].includes(id) && location.pathname === "/") {
+            return activeId === id
+                ? "bg-gradient-to-r from-[rgba(241,165,145,1)] to-[rgba(233,119,217,1)] text-white px-4 py-2 rounded-full font-semibold"
+                : "px-4 py-2 text-gray-800 hover:text-white hover:bg-gray-200 rounded-full";
+        }
+        return "px-4 py-2 text-gray-800 hover:text-white hover:bg-gray-200 rounded-full";
+    };
 
-    useEffect(() => {
-        const handleScrollSpy = () => {
-            const scrollY = window.scrollY + 100;
-            for (const id of sectionIds) {
-                const section = document.getElementById(id);
-                if (section) {
-                    const offsetTop = section.offsetTop;
-                    const offsetHeight = section.offsetHeight;
-                    if (scrollY >= offsetTop && scrollY < offsetTop + offsetHeight) {
-                        setActiveId(id);
-                        break;
-                    }
-                }
-            }
-        };
-
-        window.addEventListener('scroll', handleScrollSpy);
-        return () => window.removeEventListener('scroll', handleScrollSpy);
-    }, []);
-
-    const getLinkClass = (id) =>
-        activeId === id
-            ? "bg-gradient-to-r from-[rgba(241,165,145,1)] to-[rgba(233,119,217,1)] text-white px-4 py-2 rounded-full font-semibold"
-            : "px-4 py-2 text-gray-800 hover:text-white hover:bg-gray-200 rounded-full";
-
-    const links = sectionIds.map((id) => (
-        <li key={id}>
-            <Link to="/" onClick={() => handleScroll(id)} className={getLinkClass(id)}>
-                {id.charAt(0).toUpperCase() + id.slice(1)}
+    // All links manually written
+    const links = [
+        <li key="home">
+            <Link
+                to="/"
+                onClick={() => handleScroll("home")}
+                className={getLinkClass("home")}
+            >
+                Home
             </Link>
-        </li>
-    ));
+        </li>,
+        <li key="about">
+            <Link
+                to="/about"
+                className={
+                    location.pathname === "/about"
+                        ? "bg-gradient-to-r from-[rgba(241,165,145,1)] to-[rgba(233,119,217,1)] text-white px-4 py-2 rounded-full font-semibold"
+                        : "px-4 py-2 text-gray-800 hover:text-white hover:bg-gray-200 rounded-full"
+                }
+            >
+                About
+            </Link>
+        </li>,
+        <li key="services">
+            <Link to="/" onClick={() => handleScroll("services")} className={getLinkClass("services")}>
+                Services
+            </Link>
+        </li>,
+        <li key="product">
+            <Link to="/" onClick={() => handleScroll("product")} className={getLinkClass("product")}>
+                Product
+            </Link>
+        </li>,
+        <li key="contact">
+            <Link to="/" onClick={() => handleScroll("contact")} className={getLinkClass("contact")}>
+                Contact
+            </Link>
+        </li>,
+    ];
 
     return (
         <div className="fixed top-0 left-0 right-0 z-50 bg-base-100 shadow-sm rounded-b-xl px-6 md:px-20">
@@ -96,6 +111,7 @@ const Navbar = () => {
                             Sign-In
                         </Link>
                     )}
+
                     <Link
                         to="/"
                         onClick={(e) => {
@@ -106,7 +122,6 @@ const Navbar = () => {
                     >
                         Request for demo <ArrowRight className="h-4 w-4" />
                     </Link>
-
                 </div>
             </div>
         </div>
