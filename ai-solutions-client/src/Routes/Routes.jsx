@@ -12,6 +12,7 @@ import DemoRequest from "../components/DashboardContent/DemoRequest";
 import ManageServices from "../components/DashboardContent/ManageServices";
 import ContactUsMessage from "../components/DashboardContent/ContactUsMessage";
 import AboutPage from "../pages/About/AboutPage";
+import Contact from "../pages/ContactUs/Contact";
 
 
 
@@ -24,6 +25,10 @@ export const router = createBrowserRouter([
   {
     path: '/about',
     element: <AboutPage></AboutPage>
+  },
+  {
+    path: '/contact',
+    element: <Contact></Contact>
   },
   {
     path: '/dashboard',

@@ -1,12 +1,13 @@
 import React from 'react';
 import { FaHandPeace } from 'react-icons/fa';
-import imgrob from '../../assets/Banner/b-1.webp'
+import imgrob from '../../assets/Banner/b-1.webp';
 import { ArrowRight } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const Home = () => {
     return (
         <div id="home" className="bg-[#f9f9f9] max-w-7xl mx-auto pt-24 pb-12">
-            <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 bg-white p-8 rounded-xl shadow-lg">
+            <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 p-8 rounded-xl shadow-lg">
 
                 {/* Left Content */}
                 <div className="space-y-6">
@@ -42,6 +43,7 @@ const Home = () => {
                     </div>
                 </div>
 
+                {/* Right Content with Animations */}
                 {/* Right Content */}
                 <div className="relative">
                     <img
@@ -50,17 +52,38 @@ const Home = () => {
                         className="rounded-2xl shadow-lg w-full h-96 object-cover"
                     />
 
-                    {/* Tags */}
-                    <div className="absolute top-4 right-4 bg-white text-sm px-3 py-1 rounded-full shadow-md font-medium">
+                    {/* Animated Tags */}
+                    <motion.div
+                        className="absolute top-4 right-4 bg-white text-sm px-3 py-1 rounded-full shadow-md font-medium"
+                        initial={{ opacity: 0, y: -20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6 }}
+                        viewport={{ once: false, amount: 0.3 }}
+                    >
                         AI Digital Solutions
-                    </div>
-                    <div className="absolute bottom-4 left-4 bg-white text-sm px-3 py-1 rounded-full shadow-md font-medium">
+                    </motion.div>
+
+                    <motion.div
+                        className="absolute bottom-4 left-4 bg-white text-sm px-3 py-1 rounded-full shadow-md font-medium"
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, delay: 0.2 }}
+                        viewport={{ once: false, amount: 0.3 }}
+                    >
                         Petition Drafting
-                    </div>
-                    <div className="absolute bottom-4 right-4 bg-white text-sm px-3 py-1 rounded-full shadow-md font-medium">
+                    </motion.div>
+
+                    <motion.div
+                        className="absolute bottom-4 right-4 bg-white text-sm px-3 py-1 rounded-full shadow-md font-medium"
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, delay: 0.4 }}
+                        viewport={{ once: false, amount: 0.3 }}
+                    >
                         Chat with us 🤖
-                    </div>
+                    </motion.div>
                 </div>
+
             </div>
         </div>
     );

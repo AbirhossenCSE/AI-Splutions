@@ -1,10 +1,9 @@
 import { ArrowRight } from 'lucide-react';
-import React, { useState } from 'react';
+import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import useAuth from '../hooks/useAuth';
 
 const Navbar = () => {
-    const [activeId, setActiveId] = useState('home');
     const { user, signOutUser } = useAuth();
     const location = useLocation();
 
@@ -14,30 +13,16 @@ const Navbar = () => {
             .catch(() => console.log('Sign out failed'));
     };
 
-    const handleScroll = (id) => {
-        const element = document.getElementById(id);
-        if (element) {
-            element.scrollIntoView({ behavior: "smooth" });
-            setActiveId(id);
-        }
-    };
+    const activeClass =
+        "bg-gradient-to-r from-[rgba(241,165,145,1)] to-[rgba(233,119,217,1)] text-white px-4 py-2 rounded-full font-semibold";
+    const defaultClass =
+        "px-4 py-2 text-gray-800 hover:text-black hover:bg-gray-200 rounded-full";
 
-    const getLinkClass = (id) => {
-        if (["home", "services", "product", "contact"].includes(id) && location.pathname === "/") {
-            return activeId === id
-                ? "bg-gradient-to-r from-[rgba(241,165,145,1)] to-[rgba(233,119,217,1)] text-white px-4 py-2 rounded-full font-semibold"
-                : "px-4 py-2 text-gray-800 hover:text-white hover:bg-gray-200 rounded-full";
-        }
-        return "px-4 py-2 text-gray-800 hover:text-white hover:bg-gray-200 rounded-full";
-    };
-
-    // All links manually written
     const links = [
         <li key="home">
             <Link
                 to="/"
-                onClick={() => handleScroll("home")}
-                className={getLinkClass("home")}
+                className={location.pathname === "/" ? activeClass : defaultClass}
             >
                 Home
             </Link>
@@ -45,34 +30,39 @@ const Navbar = () => {
         <li key="about">
             <Link
                 to="/about"
-                className={
-                    location.pathname === "/about"
-                        ? "bg-gradient-to-r from-[rgba(241,165,145,1)] to-[rgba(233,119,217,1)] text-white px-4 py-2 rounded-full font-semibold"
-                        : "px-4 py-2 text-gray-800 hover:text-white hover:bg-gray-200 rounded-full"
-                }
+                className={location.pathname === "/about" ? activeClass : defaultClass}
             >
                 About
             </Link>
         </li>,
+        <li key="blog">
+            <Link
+                to="/blog"
+                className={location.pathname === "/blog" ? activeClass : defaultClass}
+            >
+                Blog
+            </Link>
+        </li>,
         <li key="services">
-            <Link to="/" onClick={() => handleScroll("services")} className={getLinkClass("services")}>
+            <Link
+                to="/services"
+                className={location.pathname === "/services" ? activeClass : defaultClass}
+            >
                 Services
             </Link>
         </li>,
-        <li key="product">
-            <Link to="/" onClick={() => handleScroll("product")} className={getLinkClass("product")}>
-                Product
-            </Link>
-        </li>,
         <li key="contact">
-            <Link to="/" onClick={() => handleScroll("contact")} className={getLinkClass("contact")}>
+            <Link
+                to="/contact"
+                className={location.pathname === "/contact" ? activeClass : defaultClass}
+            >
                 Contact
             </Link>
-        </li>,
+        </li>
     ];
 
     return (
-        <div className="fixed top-0 left-0 right-0 z-50 bg-base-100 shadow-sm rounded-b-xl px-6 md:px-20">
+        <div className="fixed max-w-7xl mx-auto top-0 left-0 right-0 z-50 bg-base-100 shadow-sm rounded-b-xl">
             <div className="navbar">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -85,7 +75,7 @@ const Navbar = () => {
                             {links}
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl">AI Solutions</a>
+                    <Link to="/" className="btn btn-ghost text-xl">AI Solutions</Link>
                 </div>
 
                 <div className="navbar-center hidden lg:flex">
@@ -113,11 +103,7 @@ const Navbar = () => {
                     )}
 
                     <Link
-                        to="/"
-                        onClick={(e) => {
-                            e.preventDefault();
-                            window.location.href = "/#product";
-                        }}
+                        to="/demo"
                         className="bg-gradient-to-r from-[rgba(241,165,145,1)] to-[rgba(233,119,217,1)] text-white md:px-8 md:py-3 px-2 py-1 flex items-center gap-2 rounded-3xl shadow-md hover:shadow-lg transition-shadow duration-200"
                     >
                         Request for demo <ArrowRight className="h-4 w-4" />
