@@ -1,5 +1,5 @@
 import React from 'react';
-import img from '../../assets/Banner/b-1.webp';
+import img from '../../assets/Banner/about.png';
 import { FaBullseye, FaRocket, FaHandshake, FaEye } from 'react-icons/fa';
 
 const aboutData = [

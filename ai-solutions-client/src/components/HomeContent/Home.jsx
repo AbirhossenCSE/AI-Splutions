@@ -80,7 +80,7 @@ const Home = () => {
                         transition={{ duration: 0.6, delay: 0.4 }}
                         viewport={{ once: false, amount: 0.3 }}
                     >
-                        Chat with us 🤖
+                        Digital Solutions
                     </motion.div>
                 </div>
 

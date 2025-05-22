@@ -83,7 +83,7 @@ const Navbar = () => {
                 </div>
 
                 <div className="navbar-end">
-                    {user && (
+                    {/* {user && (
                         <Link className="py-2 px-4 bg-base-300 rounded-3xl mr-4" to="/dashboard/adminHome">
                             Dashboard
                         </Link>
@@ -100,7 +100,7 @@ const Navbar = () => {
                         <Link className="py-2 px-4 bg-base-300 rounded-3xl mr-4" to="/login">
                             Sign-In
                         </Link>
-                    )}
+                    )} */}
 
                     <Link
                         to="/demo"
