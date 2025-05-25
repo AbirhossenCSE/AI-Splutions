@@ -53,7 +53,7 @@ const JourneyWithUs = () => {
     };
 
     return (
-        <div id="product" className="max-w-7xl mx-auto px-4 py-12 space-y-20">
+        <div id="product" className="max-w-[1800px] mx-auto py-12 space-y-20">
 
             {productData.map((product, index) => {
                 const isEven = index % 2 === 0;

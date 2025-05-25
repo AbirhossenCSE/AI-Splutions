@@ -32,8 +32,8 @@ const Testimonials = () => {
     };
 
     return (
-        <div className="bg-[#f8f9fa] py-20 px-4 md:px-0">
-            <div className="max-w-6xl mx-auto">
+        <div className="bg-[#f8f9fa] max-w-[1800px] mx-auto py-20 px-4 md:px-0">
+            <div className=" mx-auto">
                 {testimonials.length > 0 ? (
                     <Slider {...settings}>
                         {testimonials.map((item) => (

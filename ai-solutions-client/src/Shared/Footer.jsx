@@ -3,11 +3,11 @@ import { FaInstagram, FaFacebookF, FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
     return (
-        <footer className="bg-[#f7f7f7] relative z-10">
+        <footer className="bg-[#f7f7f7] max-w-[1800px] mx-auto relative z-10">
             {/* Background Blur */}
             <div className="absolute bottom-0 left-0 w-full h-64 bg-gradient-to-tr from-pink-400 via-purple-400 to-orange-400 opacity-30 blur-3xl z-0" />
 
-            <div className="max-w-6xl mx-auto py-16 px-4 md:px-0 relative z-10 grid grid-cols-1 md:grid-cols-5 gap-8">
+            <div className=" mx-auto py-16 px-4 md:px-0 relative z-10 grid grid-cols-1 md:grid-cols-5 gap-8">
                 {/* Left Section */}
                 <div className="bg-white rounded-2xl md:col-span-2 p-6">
                     <h2 className="text-3xl font-bold text-gray-900 leading-tight">

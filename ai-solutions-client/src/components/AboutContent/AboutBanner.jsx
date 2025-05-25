@@ -5,7 +5,7 @@ import imgrob from '../../assets/About/b-1.png';
 
 const AboutBanner = () => {
     return (
-        <div className="bg-[#f9f9f9] max-w-7xl mx-auto pt-24 pb-12">
+        <div className="bg-[#f9f9f9] max-w-[1800px] mx-auto pt-24 pb-12">
             <div className="relative bg-white p-8 rounded-xl shadow-lg grid grid-cols-1 md:grid-cols-2 items-center gap-10">
 
                 {/* Left Content with Animation */}

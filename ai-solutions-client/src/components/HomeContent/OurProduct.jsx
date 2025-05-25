@@ -53,7 +53,7 @@ const OurProduct = () => {
     };
 
     return (
-        <div id="product" className="max-w-7xl mx-auto px-4">
+        <div id="product" className="max-w-[1800px] mx-auto px-4">
             {/* Heading */}
             <div className="text-center mb-12 pt-10">
                 <span className="text-xs uppercase text-gray-500 bg-base-300 px-3 py-1 rounded-full shadow-sm">Our Product</span>

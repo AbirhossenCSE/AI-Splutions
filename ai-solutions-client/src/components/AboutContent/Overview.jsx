@@ -21,7 +21,7 @@ const solutions = [
 
 const Overview = () => {
     return (
-        <div className="max-w-7xl mx-auto py-12 px-4 md:px-6">
+        <div className="max-w-[1800px] mx-auto py-12 px-4 md:px-6">
             <div className="text-center mb-10">
                 <span className="text-sm bg-white px-3 py-1 rounded-full shadow text-gray-600">
                     Overview

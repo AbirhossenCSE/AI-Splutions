@@ -21,7 +21,7 @@ const Blog = () => {
     const visibleBlogs = showAll ? blogs : blogs.slice(0, 3);
 
     return (
-        <section className="max-w-7xl mx-auto px-4 py-16">
+        <section className="max-w-[1800px] mx-auto px-4 py-16">
             <div className="text-center mb-12 pt-10">
                 <span className="text-xs uppercase text-gray-500 bg-base-300 px-3 py-1 rounded-full shadow-sm">Blog</span>
                 <h2 className="mt-4 text-3xl md:text-4xl font-semibold text-gray-800 leading-snug">

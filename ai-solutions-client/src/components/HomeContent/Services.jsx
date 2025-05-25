@@ -21,8 +21,8 @@ const Services = () => {
     }, [axiosPublic]);
 
     return (
-        <div id='services' className="bg-gray-100 py-16">
-            <div className="container mx-auto px-8">
+        <div id='services' className="bg-gray-100 max-w-[1800px] mx-auto py-16">
+            <div className=" mx-auto">
                 {/* Title */}
                 <div className="text-center mb-12 pt-10">
                     <span className="text-xs uppercase text-gray-500 bg-base-300 px-3 py-1 rounded-full shadow-sm">Our Services</span>
