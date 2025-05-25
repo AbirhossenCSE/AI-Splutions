@@ -3,7 +3,7 @@ import img1 from '../../assets/Banner/contact.png';
 
 const ContactUsMain = () => {
     return (
-        <div className="min-h-screen flex items-center justify-center px-4 py-10">
+        <div className="flex items-center justify-center px-4 py-10">
             <div className="bg-white rounded-xl shadow-lg max-w-[1800px] mx-auto w-full p-6 md:p-10 mt-20">
                 
                 {/* Centered Heading */}

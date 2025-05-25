@@ -1,20 +1,28 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { ArrowRight } from 'lucide-react';
-import useAxiosPublic from '../../hooks/useAxiosPublic';
 import Swal from 'sweetalert2';
+import img1 from '../../assets/Jus/Rectangle-1.png'
+import img2 from '../../assets/Jus/Rectangle-2.png'
 
 const JourneyWithUs = () => {
-    const axiosPublic = useAxiosPublic();
-    const [productData, setProductData] = useState([]);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [selectedProduct, setSelectedProduct] = useState(null);
     const [formData, setFormData] = useState({ name: '', email: '', phone: '' });
 
-    useEffect(() => {
-        axiosPublic.get('/products')
-            .then(res => setProductData(res.data))
-            .catch(err => console.error("Failed to fetch products:", err));
-    }, [axiosPublic]);
+    const productData = [
+        {
+            _id: '1',
+            title: 'Mission',
+            image: img1,
+            description: 'Automate petition drafting with AI for faster, accurate, and hassle-free legal work. Perfect for law and real estate firms.'
+        },
+        {
+            _id: '2',
+            title: 'Vision',
+            image: img2,
+            description: 'Automate petition drafting with AI for faster, accurate, and hassle-free legal work. Perfect for law and real estate firms.'
+        }
+    ];
 
     const openModal = (product) => {
         setSelectedProduct(product);
@@ -36,7 +44,7 @@ const JourneyWithUs = () => {
                 productName: selectedProduct.title,
                 timestamp: new Date()
             };
-            await axiosPublic.post('/demo-requests', payload);
+            console.log(payload); // You can send this to your backend
             Swal.fire({
                 position: "top-end",
                 icon: "success",
@@ -54,10 +62,8 @@ const JourneyWithUs = () => {
 
     return (
         <div id="product" className="max-w-[1800px] mx-auto py-12 space-y-20">
-
             {productData.map((product, index) => {
                 const isEven = index % 2 === 0;
-
                 return (
                     <div key={product._id} className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
                         {/* Image */}
@@ -65,18 +71,17 @@ const JourneyWithUs = () => {
                             <img
                                 src={product.image}
                                 alt={product.title}
-                                className="rounded-xl shadow-xl w-full h-96 object-cover"
+                                className="rounded-xl shadow-xl w-[668px] h-[668px] object-cover mx-8"
                             />
                         </div>
 
                         {/* Content */}
                         <div className={`${isEven ? 'order-2' : 'order-1'} space-y-6 p-8`}>
                             <h1 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
-                                Empowering the Future with
-                                <span className="text-black">{product.title}</span>
+                                Our journey and <span className="text-black">{product.title}</span>
                             </h1>
                             <p className="text-gray-600 text-lg">
-                                {product.description || 'Automate petition drafting with AI for faster, accurate, and hassle-free legal work. Perfect for law and real estate firms.'}
+                                {product.description}
                             </p>
 
                             <div className="flex flex-wrap items-center gap-4">
@@ -84,7 +89,7 @@ const JourneyWithUs = () => {
                                     onClick={() => openModal(product)}
                                     className="bg-gradient-to-r from-[rgba(241,165,145,1)] to-[rgba(233,119,217,1)] text-white px-8 py-3 flex items-center gap-2 rounded-3xl shadow-md hover:shadow-lg transition-shadow duration-200"
                                 >
-                                    Request for demo <ArrowRight className="h-4 w-4" />
+                                    Get a Quote <ArrowRight className="h-4 w-4" />
                                 </button>
                             </div>
                         </div>
@@ -152,7 +157,6 @@ const JourneyWithUs = () => {
                     </div>
                 </div>
             )}
-
         </div>
     );
 };
