@@ -3,8 +3,8 @@ import img1 from '../../assets/Banner/contact.png';
 
 const ContactUsMain = () => {
     return (
-        <div className="flex items-center justify-center px-4 py-10">
-            <div className="bg-white rounded-xl shadow-lg max-w-[1800px] mx-auto w-full p-6 md:p-10 mt-20">
+        <div className="flex items-center justify-center py-10">
+            <div className="bg-white rounded-xl shadow-lg max-w-[1800px] mx-auto w-full p-6 md:p-24 mt-20">
                 
                 {/* Centered Heading */}
                 <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 text-center mb-10">

@@ -11,7 +11,7 @@ import ContactUs from '../components/HomeContent/ContactUs';
 
 const Main = () => {
     return (
-        <div className='bg-[#f9f9f9] px-6 md:px-20'>
+        <div className='bg-[#F3F4F5] px-6 md:px-20 pt-24'>
             <Navbar></Navbar>
             <Home></Home>
             <About></About>

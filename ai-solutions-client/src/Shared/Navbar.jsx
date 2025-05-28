@@ -62,8 +62,8 @@ const Navbar = () => {
     ];
 
     return (
-        <div className="fixed top-0 left-20 right-20 z-50">
-            <div className="max-w-[1800px] mx-auto bg-[#f9f9f9] shadow-xl">
+        <div className="fixed top-5 md:left-20 md:right-20 z-50 bg-[#F3F4F5]">
+            <div className="max-w-[1800px] mx-auto bg-[#f9f9f9] rounded-xl shadow-xl">
                 <div className="px-4">
                     <div className="navbar rounded-b-xl">
                         <div className="navbar-start">
@@ -77,7 +77,7 @@ const Navbar = () => {
                                     {links}
                                 </ul>
                             </div>
-                            <Link to="/" className="btn btn-ghost text-xl">AI Solutions</Link>
+                            <Link to="/" className="btn btn-ghost text-2xl font-bold">AI Solutions USA</Link>
                         </div>
 
                         <div className="navbar-center hidden lg:flex">
@@ -89,7 +89,7 @@ const Navbar = () => {
                                 to="/demo"
                                 className="bg-gradient-to-r from-[rgba(241,165,145,1)] to-[rgba(233,119,217,1)] text-white md:px-8 md:py-3 px-2 py-1 flex items-center gap-2 rounded-3xl shadow-md hover:shadow-lg transition-shadow duration-200"
                             >
-                                Request for demo <ArrowRight className="h-4 w-4" />
+                                Get a Quote <ArrowRight className="h-4 w-4" />
                             </Link>
                         </div>
                     </div>

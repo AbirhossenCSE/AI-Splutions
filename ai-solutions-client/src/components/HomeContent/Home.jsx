@@ -1,20 +1,19 @@
 import React from 'react';
 import { FaHandPeace } from 'react-icons/fa';
-import imgrob from '../../assets/Banner/b-1.webp';
+import imgrob from '../../assets/Banner/b-2.png';
 import { ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Home = () => {
     return (
-        <div className="bg-[#f9f9f9] max-w-[1800px] mx-auto pt-24 pb-12">
-            <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10 p-8 rounded-xl shadow-lg">
+        <div className="bg-[#FFFFFF] max-w-[1800px] mx-auto mt-6 rounded-xl shadow-xl border border-transparent">
+            <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10">
 
                 {/* Left Content */}
-                <div className="space-y-6">
+                <div className="space-y-6 m-10">
                     <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
                         Empowering the <br /> Future with <br />
-                        <span className="text-black">AI-Driven Solutions</span>
-                        <FaHandPeace className="inline ml-2 text-yellow-500" />
+                        AI-Driven Solutions                        
                     </h1>
                     <p className="text-gray-600 text-lg">
                         Automate petition drafting with AI for faster, accurate, and hassle-free legal
@@ -23,9 +22,9 @@ const Home = () => {
 
                     <div className="flex flex-wrap items-center gap-4">
                         <button className="bg-gradient-to-r from-[rgba(241,165,145,1)] to-[rgba(233,119,217,1)] text-white px-8 py-3 flex items-center gap-2 rounded-3xl shadow-md hover:shadow-lg transition-shadow duration-200">
-                            Request for demo <ArrowRight className="h-4 w-4" />
+                            Get a Quote <ArrowRight className="h-4 w-4" />
                         </button>
-                        <button className="border border-gray-300 px-5 py-2 rounded-full text-sm font-medium hover:bg-gray-100">
+                        <button className="border border-gray-300 px-8 py-3 rounded-full text-sm font-medium hover:bg-gray-100">
                             Learn More
                         </button>
                     </div>
@@ -49,7 +48,7 @@ const Home = () => {
                     <img
                         src={imgrob}
                         alt="AI Robot"
-                        className="rounded-2xl shadow-lg w-full h-96 object-cover"
+                        className="rounded-2xl shadow-lg w-full h-[800px] object-cover"
                     />
 
                     {/* Animated Tags */}
