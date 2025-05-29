@@ -35,7 +35,7 @@ const aboutData = [
 
 const About = () => {
     return (
-        <div id='about' className="bg-white max-w-[1800px] mx-auto rounded-xl shadow-lg mt-8">
+        <div id='about' className="bg-white max-w-[1800px] mx-auto rounded-2xl shadow-lg mt-8">
             <div className="text-center mb-12 pt-10">
                 <span className="text-xs uppercase text-gray-500 bg-base-300 px-3 py-1 rounded-full shadow-sm">About us</span>
                 <h2 className="mt-4 text-3xl md:text-4xl font-semibold text-gray-800 leading-snug">
@@ -51,7 +51,7 @@ const About = () => {
                         <div key={index} className={`${item.bg} p-6 mx-4 rounded-xl shadow hover:shadow-md transition`}>
                             <div className="text-purple-600 text-2xl mb-2">{item.icon}</div>
                             <h4 className="text-lg font-semibold text-gray-800 mb-1">{item.title}</h4>
-                            <p className="text-sm text-gray-600">{item.description}</p>
+                            <p className="text-sm text-gray-600 text-justify">{item.description}</p>
                         </div>
                     ))}
                 </div>

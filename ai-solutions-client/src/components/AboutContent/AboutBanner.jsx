@@ -5,22 +5,22 @@ import imgrob from '../../assets/About/b-1.png';
 
 const AboutBanner = () => {
     return (
-        <div className="bg-[#f9f9f9] max-w-[1800px] mx-auto pt-24 pb-12">
-            <div className="relative bg-white p-8 rounded-xl shadow-lg grid grid-cols-1 md:grid-cols-2 items-center gap-10">
+        <div className="max-w-[1800px] mx-auto mt-20">
+            <div className="relative p-8 bg-[#f9f9f9] rounded-2xl shadow-2xl grid grid-cols-1 md:grid-cols-2 items-center gap-10">
 
                 {/* Left Content with Animation */}
                 <motion.div
-                    className="space-y-6"
+                    className="space-y-6 md:px-10 "
                     initial={{ opacity: 0, x: -50 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 1 }}
                     viewport={{ once: false }}
                 >
-                    <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+                    <h1 className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight">
                         Empowering the <br /> Future with <br />
                         <span className="text-black">AI-Driven Solutions</span>
                     </h1>
-                    <p className="text-gray-600 text-lg">
+                    <p className="text-gray-600 text-xl text-justify">
                         Automate petition drafting with AI for faster, accurate, and hassle-free legal
                         work. Perfect for law and real estate firms.
                     </p>
@@ -43,7 +43,7 @@ const AboutBanner = () => {
                     <img
                         src={imgrob}
                         alt="AI Robot"
-                        className="rounded-2xl shadow-lg w-full max-w-md h-auto object-cover"
+                        className="rounded-2xl shadow-lg md:w-[668px] md:h-[680px] object-cover md:mt-12"
                     />
                 </motion.div>
             </div>

@@ -7,7 +7,7 @@ import Footer from '../../Shared/Footer';
 
 const Contact = () => {
     return (
-        <div className='bg-gray-100 px-6 md:px-20'>
+        <div className='bg-[#F3F4F5] md:px-20 pt-24'>
             <Navbar></Navbar>
             <ContactUsMain></ContactUsMain>
             <ContactUs></ContactUs>

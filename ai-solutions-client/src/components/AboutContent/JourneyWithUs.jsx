@@ -65,22 +65,22 @@ const JourneyWithUs = () => {
             {productData.map((product, index) => {
                 const isEven = index % 2 === 0;
                 return (
-                    <div key={product._id} className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                    <div key={product._id} className="bg-white px-2 py-4 md:p-10 shadow-xl rounded-xl grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
                         {/* Image */}
                         <div className={`${isEven ? 'order-1' : 'order-2'}`}>
                             <img
                                 src={product.image}
                                 alt={product.title}
-                                className="rounded-xl shadow-xl w-[668px] h-[668px] object-cover mx-8"
+                                className="rounded-xl shadow-xl md:w-[668px] md:h-[668px] object-cover md:mx-8"
                             />
                         </div>
 
                         {/* Content */}
-                        <div className={`${isEven ? 'order-2' : 'order-1'} space-y-6 p-8`}>
+                        <div className={`${isEven ? 'order-2' : 'order-1'} space-y-6 px-10`}>
                             <h1 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
                                 Our journey and <span className="text-black">{product.title}</span>
                             </h1>
-                            <p className="text-gray-600 text-lg">
+                            <p className="text-gray-600 text-lg text-justify">
                                 {product.description}
                             </p>
 

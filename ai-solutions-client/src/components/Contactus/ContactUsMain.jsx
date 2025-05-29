@@ -3,62 +3,98 @@ import img1 from '../../assets/Banner/contact.png';
 
 const ContactUsMain = () => {
     return (
-        <div className="flex items-center justify-center py-10">
-            <div className="bg-white rounded-xl shadow-lg max-w-[1800px] mx-auto w-full p-6 md:p-24 mt-20">
-                
-                {/* Centered Heading */}
-                <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 text-center mb-10">
-                    Contact Us
+        <div className="flex items-center justify-center mt-20">
+            <div className="bg-[#FFFFFF] rounded-2xl shadow-2lg max-w-[1800px] mx-auto w-full p-4 md:p-10">
+                {/* Heading */}
+                <h2 className="text-3xl md:text-5xl font-bold text-center text-gray-900 mb-10">
+                    Get a Quote
                 </h2>
 
-                <div className="grid md:grid-cols-2 gap-10 p-10">
+                <div className="grid md:grid-cols-2 gap-10 md:px-10">
                     {/* Left: Form */}
-                    <form className="space-y-4">
+                    <form className="space-y-5">
                         <div className="grid grid-cols-2 gap-4">
+                            <div className="flex flex-col">
+                                <label className="text-sm font-medium text-gray-700 mb-1">First Name</label>
+                                <input
+                                    type="text"
+                                    placeholder="First Name"
+                                    className="border border-gray-300 rounded-md px-4 py-2 w-full"
+                                />
+                            </div>
+                            <div className="flex flex-col">
+                                <label className="text-sm font-medium text-gray-700 mb-1">Last Name</label>
+                                <input
+                                    type="text"
+                                    placeholder="Last Name"
+                                    className="border border-gray-300 rounded-md px-4 py-2 w-full"
+                                />
+                            </div>
+                        </div>
+
+                        <div className="flex flex-col">
+                            <label className="text-sm font-medium text-gray-700 mb-1">Email</label>
                             <input
-                                type="text"
-                                placeholder="First Name"
-                                className="border border-gray-300 rounded-md px-4 py-2 w-full"
-                            />
-                            <input
-                                type="text"
-                                placeholder="Last Name"
+                                type="email"
+                                placeholder="yourname@email.com"
                                 className="border border-gray-300 rounded-md px-4 py-2 w-full"
                             />
                         </div>
 
-                        <input
-                            type="email"
-                            placeholder="youname@gmail.com"
-                            className="border border-gray-300 rounded-md px-4 py-2 w-full"
-                        />
-                        <input
-                            type="text"
-                            placeholder="Company name"
-                            className="border border-gray-300 rounded-md px-4 py-2 w-full"
-                        />
-                        <input
-                            type="text"
-                            placeholder="Company Industry"
-                            className="border border-gray-300 rounded-md px-4 py-2 w-full"
-                        />
+                        <div className="flex flex-col">
+                            <label className="text-sm font-medium text-gray-700 mb-1">Company Name</label>
+                            <input
+                                type="text"
+                                placeholder="Company name"
+                                className="border border-gray-300 rounded-md px-4 py-2 w-full"
+                            />
+                        </div>
 
-                        <select className="border border-gray-300 rounded-md px-4 py-2 w-full">
-                            <option>Service</option>
-                            <option>Support</option>
-                            <option>Partnership</option>
-                        </select>
+                        <div className="flex flex-col">
+                            <label className="text-sm font-medium text-gray-700 mb-1">Company Industry</label>
+                            <input
+                                type="text"
+                                placeholder="Company Industry"
+                                className="border border-gray-300 rounded-md px-4 py-2 w-full"
+                            />
+                        </div>
 
-                        <textarea
-                            placeholder="Write your message"
-                            className="border border-gray-300 rounded-md px-4 py-2 w-full h-32 resize-none"
-                        ></textarea>
+                        {/* Services Checkboxes */}
+                        <div>
+                            <p className="font-medium text-gray-700 mb-2">What services are you interested in? *</p>
+                            <div className="space-y-2">
+                                <label className="flex items-center space-x-2">
+                                    <input type="checkbox" className="w-4 h-4 text-pink-500" />
+                                    <span>AI Petition Drafter</span>
+                                </label>
+                                <label className="flex items-center space-x-2">
+                                    <input type="checkbox" className="w-4 h-4 text-pink-500" />
+                                    <span>Chatbot & Assistants</span>
+                                </label>
+                                <label className="flex items-center space-x-2">
+                                    <input type="checkbox" className="w-4 h-4 text-pink-500" />
+                                    <span>Real Estate AI Solutions</span>
+                                </label>
+                                <label className="flex items-center space-x-2">
+                                    <input type="checkbox" className="w-4 h-4 text-pink-500" />
+                                    <span>AI Agent & Task Automation</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div className="flex flex-col">
+                            <label className="text-sm font-medium text-gray-700 mb-1">Message</label>
+                            <textarea
+                                placeholder="Write your message"
+                                className="border border-gray-300 rounded-lg px-4 py-2 w-full h-32 resize-none"
+                            ></textarea>
+                        </div>
 
                         <button
                             type="submit"
-                            className="bg-gradient-to-r from-pink-400 to-purple-400 text-white py-3 px-6 rounded-full text-sm font-medium hover:shadow-lg transition-all duration-300"
+                            className="bg-gradient-to-r from-[rgba(241,165,145,1)] to-[rgba(233,119,217,1)] text-white py-3 px-6 rounded-full text-lg font-medium hover:shadow-lg transition-all duration-300"
                         >
-                            Requested for a demo →
+                            Get a Quote →
                         </button>
                     </form>
 
@@ -67,7 +103,7 @@ const ContactUsMain = () => {
                         <img
                             src={img1}
                             alt="Contact Robot"
-                            className="rounded-xl w-full max-w-sm object-cover shadow-md"
+                            className="rounded-xl md:w-[706px] md:h-[712px] object-cover shadow-md"
                         />
                     </div>
                 </div>

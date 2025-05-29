@@ -4,6 +4,7 @@ import { Dialog } from '@headlessui/react';
 import Swal from 'sweetalert2';
 import 'sweetalert2/dist/sweetalert2.min.css';
 import useAxiosPublic from '../../hooks/useAxiosPublic';
+import logo from '../../assets/logo/c-logo.jpeg'
 
 const ContactUs = () => {
     const axiosPublic = useAxiosPublic();
@@ -47,6 +48,7 @@ const ContactUs = () => {
             <div className="container mx-auto px-4 text-center">
                 {/* Header */}
                 <div className="mb-8 md:mb-12">
+                    <img className='w-40 mx-auto' src={logo} alt="" />
                     <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
                         Have a question or want to collaborate?
                     </h2>

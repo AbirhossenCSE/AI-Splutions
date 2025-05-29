@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 const Home = () => {
     return (
-        <div className="bg-[#FFFFFF] max-w-[1800px] mx-auto mt-6 rounded-xl shadow-xl border border-transparent">
+        <div className="bg-[#FFFFFF] max-w-[1800px] mx-auto mt-20 rounded-xl shadow-2xl border border-transparent">
             <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10">
 
                 {/* Left Content */}
@@ -48,12 +48,12 @@ const Home = () => {
                     <img
                         src={imgrob}
                         alt="AI Robot"
-                        className="rounded-2xl shadow-lg w-full h-[800px] object-cover"
+                        className="rounded-2xl shadow-lg w-full md:h-[800px] object-cover"
                     />
 
                     {/* Animated Tags */}
                     <motion.div
-                        className="absolute top-4 right-4 bg-white text-sm px-3 py-1 rounded-full shadow-md font-medium"
+                        className="absolute bottom-56 right-8 bg-white text-lg px-3 py-1 rounded-full shadow-md font-medium"
                         initial={{ opacity: 0, y: -20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}
@@ -63,7 +63,7 @@ const Home = () => {
                     </motion.div>
 
                     <motion.div
-                        className="absolute bottom-4 left-4 bg-white text-sm px-3 py-1 rounded-full shadow-md font-medium"
+                        className="absolute bottom-32 left-8 bg-white text-lg px-3 py-1 rounded-full shadow-md font-medium"
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.2 }}
@@ -73,7 +73,7 @@ const Home = () => {
                     </motion.div>
 
                     <motion.div
-                        className="absolute bottom-4 right-4 bg-white text-sm px-3 py-1 rounded-full shadow-md font-medium"
+                        className="absolute bottom-8 right-8 bg-white text-lg px-3 py-1 rounded-full shadow-md font-medium"
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.4 }}

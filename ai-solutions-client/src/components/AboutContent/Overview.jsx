@@ -35,13 +35,13 @@ const Overview = () => {
                 {solutions.map((solution, index) => (
                     <div
                         key={index}
-                        className="bg-white rounded-2xl p-6 shadow hover:shadow-md transition"
+                        className="bg-white rounded-2xl p-10 shadow hover:shadow-md transition"
                     >
                         <div className="w-10 h-10 mb-4 flex items-center justify-center rounded-full border border-purple-400 text-purple-500">
                             <Puzzle size={20} />
                         </div>
-                        <h3 className="font-semibold text-lg mb-2">{solution.title}</h3>
-                        <p className="text-gray-600 text-sm">{solution.description}</p>
+                        <h3 className="font-bold text-xl my-2">{solution.title}</h3>
+                        <p className="text-gray-600 text-lg text-justify">{solution.description}</p>
                     </div>
                 ))}
             </div>
