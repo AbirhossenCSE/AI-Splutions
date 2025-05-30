@@ -23,7 +23,7 @@ const Blog = () => {
     return (
         <section className="max-w-[1800px] mx-auto px-4 py-16">
             <div className="text-center mb-12 pt-10">
-                <span className="text-xs uppercase text-gray-500 bg-base-300 px-3 py-1 rounded-full shadow-sm">Blog</span>
+                <span className="text-xs uppercase bg-gray-200 text-black px-3 py-1 rounded-full shadow-sm">Blog</span>
                 <h2 className="mt-4 text-3xl md:text-4xl font-semibold text-gray-800 leading-snug">
                     Discover the latest blogs
                 </h2>
@@ -68,7 +68,7 @@ const Blog = () => {
                 ) : (
                     <button
                         onClick={() => setShowAll(false)}
-                        className="px-6 py-3 bg-gray-500 hover:bg-gray-600 text-white rounded-full transition"
+                        className="bg-gradient-to-r from-[rgba(241,165,145,1)] to-[rgba(233,119,217,1)] text-white px-8 py-3 rounded-full transition"
                     >
                         Read Less
                     </button>

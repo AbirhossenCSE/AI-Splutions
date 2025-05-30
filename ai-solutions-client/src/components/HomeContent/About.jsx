@@ -8,7 +8,7 @@ const aboutData = [
         title: "Augmented Solutions",
         description:
             "We specialize in augmented intelligence, AI that complements human expertise. Drafting tools to task automation, tech enhances your workflow.",
-        bg: "bg-base-200",
+        bg: "bg-white",
     },
     {
         icon: <FaBullseye />,
@@ -37,7 +37,7 @@ const About = () => {
     return (
         <div id='about' className="bg-white max-w-[1800px] mx-auto rounded-2xl shadow-lg mt-8">
             <div className="text-center mb-12 pt-10">
-                <span className="text-xs uppercase text-gray-500 bg-base-300 px-3 py-1 rounded-full shadow-sm">About us</span>
+                <span className="text-xs uppercase bg-gray-200 text-black px-3 py-1 rounded-full shadow-sm">About us</span>
                 <h2 className="mt-4 text-3xl md:text-4xl font-semibold text-gray-800 leading-snug">
                     Redefining Interaction and <br /> Automation with Advanced AI
                 </h2>

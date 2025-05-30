@@ -2,7 +2,7 @@ import { ArrowRight } from 'lucide-react';
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import useAuth from '../hooks/useAuth';
-import logo from '../assets/logo/logo.jpeg'
+import logo from '../assets/logo/logo.jpeg';
 
 const Navbar = () => {
     const { user, signOutUser } = useAuth();
@@ -16,6 +16,7 @@ const Navbar = () => {
 
     const activeClass =
         "bg-gradient-to-r from-[rgba(241,165,145,1)] to-[rgba(233,119,217,1)] text-white px-4 py-2 rounded-full font-semibold text-xl";
+
     const defaultClass =
         "px-4 py-2 text-gray-800 hover:text-black hover:bg-gray-200 rounded-full text-xl";
 
@@ -65,20 +66,34 @@ const Navbar = () => {
                         <div className="navbar-start">
                             {/* Mobile Dropdown */}
                             <div className="dropdown">
-                                <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <div
+                                    tabIndex={0}
+                                    role="button"
+                                    className="p-2 rounded-md border border-gray-300 lg:hidden cursor-pointer"
+                                >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        className="h-6 w-6 text-black"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor"
+                                    >
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
                                     </svg>
                                 </div>
-                                <ul tabIndex={0} className="menu menu-sm dropdown-content bg-base-100 rounded-box z-50 mt-3 w-56 p-2 shadow">
+                                <ul
+                                    tabIndex={0}
+                                    className="menu menu-sm dropdown-content bg-white text-black rounded-box z-50 mt-3 w-56 p-2 shadow"
+                                >
                                     {links}
                                     <li className="mt-2">
                                         {quoteLinkMobile}
                                     </li>
                                 </ul>
                             </div>
+
                             <Link to="/" className="w-96 font-bold">
-                            <img src={logo} alt="" />
+                                <img src={logo} alt="Logo" />
                             </Link>
                         </div>
 

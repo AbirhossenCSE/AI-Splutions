@@ -14,14 +14,14 @@ const Footer = () => {
                 <div className="flex flex-col lg:flex-row items-center lg:items-start gap-6 lg:gap-[30px]">
                     {/* Left Section */}
                     <div className="bg-white rounded-2xl p-10 md:p-20 w-full lg:w-[576px] h-auto lg:h-[500px] flex flex-col ">
-                        <h2 className="md:text-6xl text-3xl font-bold leading-tight">
+                        <h2 className="md:text-6xl text-3xl font-bold leading-tight text-black">
                             AI is the <br /> next future
                         </h2>
                         <div>
                             <h3 className="font-semibold items-center gap-1">
                                 <img className="w-80 my-4 md:my-8" src={logo} alt="" />
                             </h3>
-                            <p className="text-sm mt-2">
+                            <p className="text-sm mt-2 text-black">
                                 © 2025 All Rights Reserved, AI Solutions USA.
                             </p>
                         </div>
@@ -30,7 +30,7 @@ const Footer = () => {
                     {/* Middle Section */}
                     <div className="w-full lg:w-[576px] h-auto lg:h-[500px] flex flex-col justify-between gap-6">
                         {/* Support Box */}
-                        <div className="bg-white rounded-2xl p-6 md:p-16 flex-1">
+                        <div className="bg-white text-black rounded-2xl p-6 md:p-16 flex-1">
                             <h3 className="text-3xl font-bold mb-2">Support</h3>
                             <p className="text-lg mb-2">
                                 Have questions? Get in touch or check out our Help Center
@@ -46,7 +46,7 @@ const Footer = () => {
                         </div>
 
                         {/* Terms Box */}
-                        <div className="bg-white rounded-2xl p-6 h-[100px]">
+                        <div className="bg-white text-black rounded-2xl p-6 h-[100px]">
                             <p className="text-lg">
                                 <span className="cursor-pointer hover:underline">Terms of use</span> &nbsp; | &nbsp;
                                 <span className="cursor-pointer hover:underline">Privacy Policy</span>
@@ -55,7 +55,7 @@ const Footer = () => {
                     </div>
 
                     {/* Right Section */}
-                    <div className="bg-white rounded-2xl p-6 w-full lg:w-[270px] h-auto lg:h-[500px] flex flex-col items-center text-center gap-6">
+                    <div className="bg-white text-black rounded-2xl p-6 w-full lg:w-[270px] h-auto lg:h-[500px] flex flex-col items-center text-center gap-6">
                         <h3 className="text-3xl my-10 font-bold">Social</h3>
                         <div className="flex flex-row lg:flex-col gap-6 text-3xl">
                             <FaInstagram />

@@ -24,7 +24,7 @@ const Home = () => {
                         <button className="bg-gradient-to-r from-[rgba(241,165,145,1)] to-[rgba(233,119,217,1)] text-white px-8 py-3 flex items-center gap-2 rounded-3xl shadow-md hover:shadow-lg transition-shadow duration-200">
                             Get a Quote <ArrowRight className="h-4 w-4" />
                         </button>
-                        <button className="border border-gray-300 px-8 py-3 rounded-full text-sm font-medium hover:bg-gray-100">
+                        <button className="border border-gray-300 px-8 py-3 text-gray-800 rounded-full text-sm font-medium hover:bg-gray-100">
                             Learn More
                         </button>
                     </div>
@@ -53,7 +53,7 @@ const Home = () => {
 
                     {/* Animated Tags */}
                     <motion.div
-                        className="absolute bottom-56 right-8 bg-white text-lg px-3 py-1 rounded-full shadow-md font-medium"
+                        className="absolute bottom-56 right-8 bg-white text-lg px-3 py-1 rounded-full shadow-md font-medium text-gray-800"
                         initial={{ opacity: 0, y: -20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}
@@ -63,7 +63,7 @@ const Home = () => {
                     </motion.div>
 
                     <motion.div
-                        className="absolute bottom-32 left-8 bg-white text-lg px-3 py-1 rounded-full shadow-md font-medium"
+                        className="absolute bottom-32 left-8 bg-white text-lg px-3 py-1 rounded-full shadow-md font-medium text-gray-800"
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.2 }}
@@ -73,7 +73,7 @@ const Home = () => {
                     </motion.div>
 
                     <motion.div
-                        className="absolute bottom-8 right-8 bg-white text-lg px-3 py-1 rounded-full shadow-md font-medium"
+                        className="absolute bottom-8 right-8 bg-white text-lg px-3 py-1 rounded-full shadow-md font-medium text-gray-800"
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.4 }}

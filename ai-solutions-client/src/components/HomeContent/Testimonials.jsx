@@ -47,7 +47,7 @@ const Testimonials = () => {
                                         />
                                     </div>
                                     <div className="md:w-1/2 w-full p-8">
-                                        <span className="text-sm  bg-gray-200 rounded-full px-3 py-1 inline-block mb-4">
+                                        <span className="text-sm  bg-gray-200 text-black rounded-full px-3 py-1 inline-block mb-4">
                                             Testimonials
                                         </span>
                                         <p className="text-2xl text-justify md:text-3xl font-semibold text-gray-800 mb-6 leading-snug">

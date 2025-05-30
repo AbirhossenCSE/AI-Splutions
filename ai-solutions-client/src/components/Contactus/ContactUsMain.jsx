@@ -19,7 +19,7 @@ const ContactUsMain = () => {
                                 <input
                                     type="text"
                                     placeholder="First Name"
-                                    className="border border-gray-300 rounded-md px-4 py-2 w-full"
+                                    className="border border-gray-300 rounded-md px-4 py-2 w-full placeholder:text-gray-500"
                                 />
                             </div>
                             <div className="flex flex-col">
@@ -27,7 +27,7 @@ const ContactUsMain = () => {
                                 <input
                                     type="text"
                                     placeholder="Last Name"
-                                    className="border border-gray-300 rounded-md px-4 py-2 w-full"
+                                    className="border border-gray-300 rounded-md px-4 py-2 w-full placeholder:text-gray-500"
                                 />
                             </div>
                         </div>
@@ -37,7 +37,7 @@ const ContactUsMain = () => {
                             <input
                                 type="email"
                                 placeholder="yourname@email.com"
-                                className="border border-gray-300 rounded-md px-4 py-2 w-full"
+                                className="border border-gray-300 rounded-md px-4 py-2 w-full placeholder:text-gray-500"
                             />
                         </div>
 
@@ -46,7 +46,7 @@ const ContactUsMain = () => {
                             <input
                                 type="text"
                                 placeholder="Company name"
-                                className="border border-gray-300 rounded-md px-4 py-2 w-full"
+                                className="border border-gray-300 rounded-md px-4 py-2 w-full placeholder:text-gray-500"
                             />
                         </div>
 
@@ -55,7 +55,7 @@ const ContactUsMain = () => {
                             <input
                                 type="text"
                                 placeholder="Company Industry"
-                                className="border border-gray-300 rounded-md px-4 py-2 w-full"
+                                className="border border-gray-300 rounded-md px-4 py-2 w-full placeholder:text-gray-500"
                             />
                         </div>
 
@@ -63,19 +63,19 @@ const ContactUsMain = () => {
                         <div>
                             <p className="font-medium text-gray-700 mb-2">What services are you interested in? *</p>
                             <div className="space-y-2">
-                                <label className="flex items-center space-x-2">
+                                <label className="flex items-center space-x-2 text-gray-800">
                                     <input type="checkbox" className="w-4 h-4 text-pink-500" />
                                     <span>AI Petition Drafter</span>
                                 </label>
-                                <label className="flex items-center space-x-2">
+                                <label className="flex items-center space-x-2 text-gray-800">
                                     <input type="checkbox" className="w-4 h-4 text-pink-500" />
                                     <span>Chatbot & Assistants</span>
                                 </label>
-                                <label className="flex items-center space-x-2">
+                                <label className="flex items-center space-x-2 text-gray-800">
                                     <input type="checkbox" className="w-4 h-4 text-pink-500" />
                                     <span>Real Estate AI Solutions</span>
                                 </label>
-                                <label className="flex items-center space-x-2">
+                                <label className="flex items-center space-x-2 text-gray-800">
                                     <input type="checkbox" className="w-4 h-4 text-pink-500" />
                                     <span>AI Agent & Task Automation</span>
                                 </label>
@@ -86,7 +86,7 @@ const ContactUsMain = () => {
                             <label className="text-sm font-medium text-gray-700 mb-1">Message</label>
                             <textarea
                                 placeholder="Write your message"
-                                className="border border-gray-300 rounded-lg px-4 py-2 w-full h-32 resize-none"
+                                className="border border-gray-300 rounded-lg px-4 py-2 w-full h-32 resize-none placeholder:text-gray-500"
                             ></textarea>
                         </div>
 
