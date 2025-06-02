@@ -13,6 +13,7 @@ import ManageServices from "../components/DashboardContent/ManageServices";
 import ContactUsMessage from "../components/DashboardContent/ContactUsMessage";
 import AboutPage from "../pages/About/AboutPage";
 import Contact from "../pages/ContactUs/Contact";
+import ServicesPage from "../pages/Services/ServicesPage";
 
 
 
@@ -29,6 +30,10 @@ export const router = createBrowserRouter([
   {
     path: '/contact',
     element: <Contact></Contact>
+  },
+  {
+    path: '/services',
+    element: <ServicesPage></ServicesPage>
   },
   {
     path: '/dashboard',
