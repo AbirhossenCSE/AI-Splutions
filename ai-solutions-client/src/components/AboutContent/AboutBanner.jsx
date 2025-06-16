@@ -6,7 +6,7 @@ import imgrob from '../../assets/About/b-1.png';
 const AboutBanner = () => {
     return (
         <div className="max-w-[1800px] mx-auto mt-20">
-            <div className="relative p-8 bg-[#f9f9f9] rounded-2xl shadow-2xl grid grid-cols-1 md:grid-cols-2 items-center gap-10">
+            <div className="relative p-8 bg-[#FFF] rounded-2xl grid grid-cols-1 md:grid-cols-2 items-center gap-10">
 
                 {/* Left Content with Animation */}
                 <motion.div

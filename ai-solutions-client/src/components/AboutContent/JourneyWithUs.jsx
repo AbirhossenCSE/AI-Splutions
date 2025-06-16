@@ -65,7 +65,7 @@ const JourneyWithUs = () => {
             {productData.map((product, index) => {
                 const isEven = index % 2 === 0;
                 return (
-                    <div key={product._id} className="bg-white px-2 py-4 md:p-10 shadow-xl rounded-xl grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                    <div key={product._id} className="bg-[#FFF] px-2 py-4 md:p-10 rounded-xl grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
                         {/* Image */}
                         <div className={`${isEven ? 'order-1' : 'order-2'}`}>
                             <img
