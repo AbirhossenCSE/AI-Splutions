@@ -1,12 +1,17 @@
 import React from "react";
 import { FaInstagram, FaFacebookF, FaXTwitter } from "react-icons/fa6";
 import logo from '../assets/logo/logo.jpeg'
+import bg from '../assets/bg/footer-bg.png'
 
 const Footer = () => {
     return (
         <footer className="bg-[#f7f7f7] min-h-[650px] relative z-10 overflow-hidden">
             {/* Background Blur */}
-            <div className="absolute bottom-0 left-0 w-full h-64 bg-gradient-to-tr from-pink-400 via-purple-400 to-orange-400 opacity-30 blur-3xl z-0" />
+            {/* <div className="absolute bottom-0 left-0 w-full h-64 bg-gradient-to-tr from-pink-400 via-purple-400 to-orange-400 opacity-30 blur-3xl z-0" /> */}
+            <div
+                className="absolute -bottom-110 rotate-90 w-full h-[1400px] bg-no-repeat bg-bottom bg-contain z-0"
+                style={{ backgroundImage: `url(${bg})` }}
+            />
 
             {/* Container to center content */}
             <div className="h-full flex justify-center items-center relative z-10 px-4 py-10">

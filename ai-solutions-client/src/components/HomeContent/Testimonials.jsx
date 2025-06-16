@@ -32,13 +32,13 @@ const Testimonials = () => {
     };
 
     return (
-        <div className="bg-[#f8f9fa] max-w-[1800px] mx-auto py-20 px-4 md:px-0">
+        <div className="max-w-[1800px] mx-auto py-20 px-4 md:px-24">
             <div className=" mx-auto">
                 {testimonials.length > 0 ? (
                     <Slider {...settings}>
                         {testimonials.map((item) => (
                             <div key={item.id}>
-                                <div className="flex flex-col md:flex-row items-center bg-white rounded-3xl shadow-md overflow-hidden">
+                                <div className="flex flex-col md:flex-row items-center  rounded-3xl  overflow-hidden">
                                     <div className="md:w-1/3 w-full">
                                         <img
                                             src={item.image}

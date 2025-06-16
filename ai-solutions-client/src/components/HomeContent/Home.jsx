@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 const Home = () => {
     return (
-        <div className="bg-[#FFFFFF] max-w-[1800px] mx-auto mt-20 rounded-xl shadow-2xl border border-transparent">
+        <div className="bg-[#FFF] max-w-[1800px] mx-auto mt-20 rounded-xl border border-transparent">
             <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10">
 
                 {/* Left Content */}
