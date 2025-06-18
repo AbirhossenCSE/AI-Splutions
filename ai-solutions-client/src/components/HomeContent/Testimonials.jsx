@@ -50,12 +50,12 @@ const Testimonials = () => {
                                         <span className="text-sm  bg-gray-200 text-black rounded-full px-3 py-1 inline-block mb-4">
                                             Testimonials
                                         </span>
-                                        <p className="text-2xl text-justify md:text-3xl font-semibold text-gray-800 mb-6 leading-snug">
+                                        <p className="text-2xl text-justify md:text-[40px] font-semibold text-gray-800 mb-6 leading-snug">
                                             “{item.quote}”
                                         </p>
-                                        <p className="font-medium text-gray-800 mb-1">– {item.name}</p>
-                                        <p className="text-sm text-gray-600 mb-4">{item.role}</p>
-                                        <p className="text-sm text-gray-400 max-w-sm">
+                                        <p className="text-[16px] text-gray-800 mb-1">– {item.name}</p>
+                                        <p className="text-[16px] text-gray-600 mb-4">{item.role}</p>
+                                        <p className="text-[16px] text-gray-400 max-w-sm">
                                             Testimonials are from an owner or employee of a current customer.
                                             No compensation was provided in any way when providing testimonials.
                                         </p>

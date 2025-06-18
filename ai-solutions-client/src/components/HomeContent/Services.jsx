@@ -26,7 +26,7 @@ const Services = () => {
                 {/* Title */}
                 <div className="text-center mb-12 pt-10">
                     <span className="text-xs uppercase bg-gray-200 text-black px-3 py-1 rounded-full shadow-sm">Our Services</span>
-                    <h2 className="mt-4 text-3xl md:text-4xl font-semibold text-gray-800 leading-snug">
+                    <h2 className="mt-4 text-3xl md:text-[64px] font-semibold text-gray-800 leading-snug">
                         Redefining Interaction and <br /> Automation with Advanced AI
                     </h2>
                 </div>

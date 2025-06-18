@@ -48,14 +48,11 @@ const ContactUs = () => {
             <div className="container mx-auto px-4 text-center">
                 {/* Header */}
                 <div className="mb-8 md:mb-12">
-                    <img className='w-40 mx-auto' src={logo} alt="" />
-                    <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
+                    <img className='w-[218px] h-[218px] mx-auto' src={logo} alt="" />
+                    <h2 className="text-3xl md:text-[40px] font-bold text-gray-800">
                         Have a question or want to collaborate?
                     </h2>
-                    <p className="text-gray-600 mt-2">
-                        Reach out and our team will get back to you.
-                    </p>
-                    <p className="text-gray-500 text-sm mt-4">
+                    <p className="text-gray-500 text-[18px] mt-4">
                         That’s how fast it is to get started on Plain. And yes, we've timed it.
                     </p>
                 </div>

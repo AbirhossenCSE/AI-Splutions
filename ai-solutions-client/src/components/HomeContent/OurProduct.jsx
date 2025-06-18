@@ -57,7 +57,7 @@ const OurProduct = () => {
             {/* Heading */}
             <div className="text-center mb-12 pt-10">
                 <span className="text-xs uppercase bg-gray-200 text-black px-3 py-1 rounded-full shadow-sm">Our Product</span>
-                <h2 className="mt-4 text-3xl md:text-4xl font-semibold text-gray-800 leading-snug">Meet Our Flagship AI Product</h2>
+                <h2 className="mt-4 text-3xl md:text-[64px] font-semibold text-gray-800 leading-snug">Meet Our Flagship AI Product</h2>
                 <p className="mt-4 text-gray-600">Our modular AI platform brings together drafting tools, chatbots, voice-based services, and intelligent agents in a single ecosystem.</p>
             </div>
 

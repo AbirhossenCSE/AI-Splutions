@@ -24,7 +24,7 @@ const Blog = () => {
         <section className="max-w-[1800px] mx-auto px-4 py-16">
             <div className="text-center mb-12 pt-10">
                 <span className="text-xs uppercase bg-gray-200 text-black px-3 py-1 rounded-full shadow-sm">Blog</span>
-                <h2 className="mt-4 text-3xl md:text-4xl font-semibold text-gray-800 leading-snug">
+                <h2 className="mt-4 text-3xl md:text-[64px] font-semibold text-gray-800 leading-snug">
                     Discover the latest blogs
                 </h2>
             </div>
