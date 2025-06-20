@@ -57,7 +57,7 @@ const Navbar = () => {
     );
 
     return (
-        <div className="fixed top-0 md:top-5 md:left-20 md:right-20 z-50 bg-[#F3F4F5]">
+        <div className=" top-0 md:top-5 md:left-20 md:right-20 z-50 bg-[#F3F4F5]">
             <div className="max-w-[1800px] mx-auto bg-[#FFF] rounded-xl">
                 <div className="px-4">
                     <div className="navbar h-[110px] items-center rounded-2xl">

@@ -3,7 +3,7 @@ import img1 from '../../assets/Banner/contact.png';
 
 const ContactUsMain = () => {
     return (
-        <div className="flex items-center justify-center mt-20">
+        <div className="flex items-center justify-center mt-12">
             <div className="bg-[#FFFFFF] rounded-2xl shadow-2lg max-w-[1800px] mx-auto w-full p-4 md:p-10">
                 {/* Heading */}
                 <h2 className="text-3xl md:text-5xl font-bold text-center text-gray-900 mb-10">

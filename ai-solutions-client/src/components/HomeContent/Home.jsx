@@ -5,12 +5,12 @@ import imgrob from '../../assets/Banner/b-2.png';
 
 const Home = () => {
     return (
-        <div className="max-w-[1800px] mx-auto mt-20 rounded-xl border border-transparent">
+        <div className="max-w-[1800px] mx-auto mt-12 rounded-xl border border-transparent">
             <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6">
 
                 {/* Left Content */}
                 <div className="space-y-6 p-10 bg-[#FFF] rounded-xl shadow-sm h-[800px] flex flex-col justify-center">
-                    <h1 className="text-4xl md:text-[72px] font-bold text-gray-900 leading-tight">
+                    <h1 className="text-4xl md:text-[72px] font-bold text-[2C2C2C] leading-tight">
                         Empowering the <br /> Future with <br />
                         AI-Driven Solutions
                     </h1>

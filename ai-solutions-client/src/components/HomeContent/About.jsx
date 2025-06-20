@@ -31,7 +31,7 @@ const aboutData = [
 
 const About = () => {
     return (
-        <div id='about' className="bg-white max-w-[1800px] mx-auto rounded-2xl shadow-lg mt-8">
+        <div id='about' className="bg-white max-w-[1800px] mx-auto rounded-2xl shadow-lg mt-8 px-4 py-8">
             <div className="text-center mb-12 pt-10">
                 <span className="text-xs uppercase bg-[#F5F5F5] text-black px-4 py-1 rounded-full shadow-sm border border-[#A1A1A1]">
                     About us

@@ -5,7 +5,7 @@ import imgrob from '../../assets/Banner/services.png';
 
 const ServicesBanner = () => {
     return (
-        <div className="max-w-[1800px] mx-auto mt-20 mb-6">
+        <div className="max-w-[1800px] mx-auto mt-12 mb-6">
             <div className="relative p-8 bg-[#f9f9f9] rounded-2xl shadow-2xl grid grid-cols-1 md:grid-cols-2 items-center gap-10">
 
                 {/* Left Content Animation */}
