@@ -10,7 +10,7 @@ const Home = () => {
 
                 {/* Left Content */}
                 <div className="space-y-6 p-10 bg-[#FFF] rounded-xl shadow-sm h-[800px] flex flex-col justify-center">
-                    <h1 className="text-4xl md:text-[72px] font-bold text-[2C2C2C] leading-tight">
+                    <h1 className="text-4xl md:text-[72px] font-bold text--[#2C2C2C] leading-tight">
                         Empowering the <br /> Future with <br />
                         AI-Driven Solutions
                     </h1>
